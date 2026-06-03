@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node -e \"if(process.env.CI){const fs=require('fs');['src/app/keystatic','src/app/api'].forEach(p=>fs.rmSync(p,{recursive:true,force:true}))}\"",
+    "prebuild": "node -e \"if(process.env.CI && !process.env.VERCEL){const fs=require('fs');['src/app/keystatic','src/app/api'].forEach(p=>fs.rmSync(p,{recursive:true,force:true}))}\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
