@@ -40,3 +40,10 @@ export async function getDownloads() {
   const entries = await reader.collections.downloads.all()
   return entries.map(({ slug, entry }) => ({ ...entry, slug }))
 }
+
+export async function getHeroSlides() {
+  const entries = await reader.collections.heroSlides.all()
+  return entries
+    .map(({ slug, entry }) => ({ ...entry, slug }))
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+}

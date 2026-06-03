@@ -1,18 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { articles as allArticles } from "@/lib/data";
-
-const articles = allArticles.slice(0, 3).map((a, i) => ({
-  slug: a.slug,
-  date: a.date,
-  title: a.title,
-  excerpt: a.excerpt,
-  bg: a.bg,
-  large: i === 0,
-}));
-
-export default function MediaSection() {
+import { getArticles } from "@/lib/reader";
+export default async function MediaSection() {
+  const allArticles = await getArticles()
+  const articles = allArticles.slice(0, 3).map((a, i) => ({ ...a, large: i === 0 }))
   return (
     <section className="py-20 bg-neutral-50">
       <div className="max-w-[1400px] mx-auto px-10">
@@ -27,7 +19,9 @@ export default function MediaSection() {
           {articles.map((a) => (
             <Link key={a.slug} href={`/media/${a.slug}`} className="block group">
               <Card className="rounded-none border-0 shadow-none group-hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                <div className={`bg-gradient-to-br ${a.bg} ${a.large ? "h-72" : "h-52"}`} />
+                <div className={`bg-gradient-to-br ${a.bg} ${a.large ? "h-72" : "h-52"} overflow-hidden`}>
+                  {a.image && <img src={a.image} alt={a.title} className="w-full h-full object-cover" />}
+                </div>
                 <CardContent className="p-6">
                   <p className="text-[11px] tracking-[2px] uppercase text-gold mb-2">{a.date}</p>
                   <h3 className="text-[15px] font-semibold leading-snug mb-2">{a.title}</h3>

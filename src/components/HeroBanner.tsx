@@ -6,31 +6,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const slides = [
-  {
-    eyebrow: "New Release 2024",
-    title: "The newly upgraded",
-    highlight: "ALA Track Light",
-    desc: "Compact and simple — family-style design, diverse accessories, suitable for more scene spaces.",
-    bg: "from-[#1a1a2e] via-[#16213e] to-[#0f3460]",
-  },
-  {
-    eyebrow: "Auto Tracking Technology",
-    title: "Precision meets",
-    highlight: "ATL Ultra Recessed",
-    desc: "Intelligent auto-tracking light that follows art pieces and objects with silent precision.",
-    bg: "from-[#1a2a1a] via-[#1e3a1e] to-[#0f3020]",
-  },
-  {
-    eyebrow: "Hospitality Collection",
-    title: "Illuminate luxury with",
-    highlight: "AMOO Downlight",
-    desc: "Crafted for the world's finest hotel spaces — warmth, elegance, and energy efficiency in one.",
-    bg: "from-[#2a1a0a] via-[#3a240a] to-[#4a3010]",
-  },
-];
+type Slide = {
+  eyebrow: string;
+  heading: string;
+  highlight: string;
+  desc: string;
+  bg: string;
+  image?: string | null;
+};
 
-export default function HeroBanner() {
+export default function HeroBanner({ slides }: { slides: Slide[] }) {
   const [current, setCurrent] = useState(0);
 
   const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
@@ -40,13 +25,18 @@ export default function HeroBanner() {
 
   return (
     <section className="relative w-full h-[640px] overflow-hidden">
-      <div className={cn("absolute inset-0 bg-gradient-to-br transition-all duration-700", slide.bg)} />
+      {slide.image ? (
+        <img src={slide.image} alt={slide.highlight} className="absolute inset-0 w-full h-full object-cover transition-all duration-700" />
+      ) : (
+        <div className={cn("absolute inset-0 bg-gradient-to-br transition-all duration-700", slide.bg)} />
+      )}
+      <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative h-full max-w-[1400px] mx-auto px-20 flex items-center">
         <div className="text-white max-w-[560px]">
           <p className="text-xs tracking-[4px] uppercase text-gold mb-4">{slide.eyebrow}</p>
           <h1 className="text-5xl font-light leading-tight mb-5">
-            {slide.title}
+            {slide.heading}
             <br />
             <strong className="font-bold">{slide.highlight}</strong>
           </h1>

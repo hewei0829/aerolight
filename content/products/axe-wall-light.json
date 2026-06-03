@@ -1,1 +1,28 @@
-{"name":"AXE Wall Light","series":"AXE","tag":"LED Wall Light","category":"outdoor","type":["Fixed/Adjustable"],"installation":["Surface Mounted"],"power":"5W – 18W","cri":"CRI 90+","cct":"2700K / 3000K","ip":"IP65","shape":"wall","bg":"from-sky-200 to-blue-200","isNew":false,"desc":"Architectural outdoor wall light with precision optics and durable die-cast housing for facade illumination.","features":["IP65 outdoor rated","Die-cast aluminium","Asymmetric optics","Salt-spray Level 9","Paintable finish"]}
+{
+  "name": "AXE Wall Light",
+  "series": "AXE",
+  "tag": "LED Wall Light",
+  "category": "outdoor",
+  "type": [
+    "Fixed/Adjustable"
+  ],
+  "installation": [
+    "Surface Mounted"
+  ],
+  "power": "5W \u2013 18W",
+  "cri": "CRI 90+",
+  "cct": "2700K / 3000K",
+  "ip": "IP65",
+  "shape": "wall",
+  "bg": "from-sky-200 to-blue-200",
+  "isNew": false,
+  "desc": "Architectural outdoor wall light with precision optics and durable die-cast housing for facade illumination.",
+  "features": [
+    "IP65 outdoor rated",
+    "Die-cast aluminium",
+    "Asymmetric optics",
+    "Salt-spray Level 9",
+    "Paintable finish"
+  ],
+  "image": null
+}

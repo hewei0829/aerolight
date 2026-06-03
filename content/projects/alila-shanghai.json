@@ -1,1 +1,28 @@
-{"name":"Alila Wutai Shanghai","location":"Shanghai, China","country":"China","brand":"Hyatt","types":["LED Ceiling Light","LED Track Light","LED Wall Light"],"areas":["Lobby","Guest room","Restaurant","Lounge"],"year":2023,"bg":"from-[#1a3a2a] to-[#2e6e5a]","bgLarge":"from-[#0d2a1a] via-[#1a3a2a] to-[#2e6e5a]","desc":"Urban sanctuary in the heart of Shanghai, blending contemporary Chinese design with precision hospitality lighting across 212 rooms.","highlights":["ADA adjustable downlights","AKIN strip in cove details","Restaurant DALI scene control","Artwork track lighting"]}
+{
+  "name": "Alila Wutai Shanghai",
+  "location": "Shanghai, China",
+  "country": "China",
+  "brand": "Hyatt",
+  "types": [
+    "LED Ceiling Light",
+    "LED Track Light",
+    "LED Wall Light"
+  ],
+  "areas": [
+    "Lobby",
+    "Guest room",
+    "Restaurant",
+    "Lounge"
+  ],
+  "year": 2023,
+  "bg": "from-[#1a3a2a] to-[#2e6e5a]",
+  "bgLarge": "from-[#0d2a1a] via-[#1a3a2a] to-[#2e6e5a]",
+  "desc": "Urban sanctuary in the heart of Shanghai, blending contemporary Chinese design with precision hospitality lighting across 212 rooms.",
+  "highlights": [
+    "ADA adjustable downlights",
+    "AKIN strip in cove details",
+    "Restaurant DALI scene control",
+    "Artwork track lighting"
+  ],
+  "image": null
+}

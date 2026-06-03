@@ -1,6 +1,7 @@
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
+import { getHeroSlides } from "@/lib/reader";
 import ProductsSection from "@/components/ProductsSection";
 import NewArrivals from "@/components/NewArrivals";
 import ProjectsGallery from "@/components/ProjectsGallery";
@@ -12,13 +13,14 @@ import Newsletter from "@/components/Newsletter";
 import SiteFooter from "@/components/SiteFooter";
 import BackToTop from "@/components/BackToTop";
 
-export default function Home() {
+export default async function Home() {
+  const heroSlides = await getHeroSlides()
   return (
     <>
       <TopBar />
       <Header />
       <main>
-        <HeroBanner />
+        <HeroBanner slides={heroSlides} />
         <ProductsSection />
         <NewArrivals />
         <ProjectsGallery />

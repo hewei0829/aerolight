@@ -1,1 +1,28 @@
-{"name":"AMOO Vanity Downlight","series":"AMOO","tag":"LED Ceiling Light","category":"indoor","type":["Fixed/Adjustable"],"installation":["Recessed"],"power":"15W","cri":"CRI 90+","cct":"3000K / 4000K","ip":"IP44","shape":"circle","bg":"from-stone-200 to-stone-300","isNew":false,"desc":"Mirror-front vanity downlight designed for luxury bathroom environments with high colour fidelity.","features":["OSRAM LED","CRI 95+","IP44 rated","Warm dimming","Anti-glare lens"]}
+{
+  "name": "AMOO Vanity Downlight",
+  "series": "AMOO",
+  "tag": "LED Ceiling Light",
+  "category": "indoor",
+  "type": [
+    "Fixed/Adjustable"
+  ],
+  "installation": [
+    "Recessed"
+  ],
+  "power": "15W",
+  "cri": "CRI 90+",
+  "cct": "3000K / 4000K",
+  "ip": "IP44",
+  "shape": "circle",
+  "bg": "from-stone-200 to-stone-300",
+  "isNew": false,
+  "desc": "Mirror-front vanity downlight designed for luxury bathroom environments with high colour fidelity.",
+  "features": [
+    "OSRAM LED",
+    "CRI 95+",
+    "IP44 rated",
+    "Warm dimming",
+    "Anti-glare lens"
+  ],
+  "image": null
+}

@@ -1,1 +1,28 @@
-{"name":"ALA Track Mute","series":"ALA","tag":"LED Track Light","category":"indoor","type":["Fixed/Adjustable"],"installation":["Track"],"power":"6W – 26W","cri":"CRI 90+","cct":"2700K / 3000K / 4000K","ip":"IP20","shape":"track","bg":"from-neutral-200 to-neutral-300","isNew":true,"desc":"Compact and quiet track light with family-style design and diverse accessories suitable for more scene spaces.","features":["CREE LED","MacAdam 2 step","50,000h lifespan","TRIAC / 0-10V dimming","Anti-glare honeycomb"]}
+{
+  "name": "ALA Track Mute",
+  "series": "ALA",
+  "tag": "LED Track Light",
+  "category": "indoor",
+  "type": [
+    "Fixed/Adjustable"
+  ],
+  "installation": [
+    "Track"
+  ],
+  "power": "6W \u2013 26W",
+  "cri": "CRI 90+",
+  "cct": "2700K / 3000K / 4000K",
+  "ip": "IP20",
+  "shape": "track",
+  "bg": "from-neutral-200 to-neutral-300",
+  "isNew": true,
+  "desc": "Compact and quiet track light with family-style design and diverse accessories suitable for more scene spaces.",
+  "features": [
+    "CREE LED",
+    "MacAdam 2 step",
+    "50,000h lifespan",
+    "TRIAC / 0-10V dimming",
+    "Anti-glare honeycomb"
+  ],
+  "image": null
+}

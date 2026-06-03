@@ -7,10 +7,33 @@ export default config({
         repo: { owner: 'hewei0829', name: 'aerolight' },
       }
     : { kind: 'local' as const },
+
   ui: {
     brand: { name: 'Aerolight Admin' },
   },
+
   collections: {
+    heroSlides: collection({
+      label: 'Hero Banner Slides',
+      slugField: 'title',
+      path: 'content/hero-slides/*',
+      format: { data: 'json' },
+      schema: {
+        title: fields.slug({ name: { label: 'Slide name (admin only)' } }),
+        eyebrow: fields.text({ label: 'Eyebrow text' }),
+        heading: fields.text({ label: 'Heading' }),
+        highlight: fields.text({ label: 'Highlighted word/phrase' }),
+        desc: fields.text({ label: 'Description', multiline: true }),
+        bg: fields.text({ label: 'Background gradient (fallback)' }),
+        image: fields.image({
+          label: 'Background image',
+          directory: 'public/images/hero',
+          publicPath: '/images/hero/',
+        }),
+        order: fields.number({ label: 'Display order', defaultValue: 1 }),
+      },
+    }),
+
     products: collection({
       label: 'Products',
       slugField: 'name',
@@ -47,10 +70,15 @@ export default config({
           ],
           defaultValue: 'circle',
         }),
-        bg: fields.text({ label: 'Background Gradient (Tailwind classes)' }),
+        bg: fields.text({ label: 'Background gradient (fallback)' }),
         isNew: fields.checkbox({ label: 'Mark as New', defaultValue: false }),
         desc: fields.text({ label: 'Description', multiline: true }),
         features: fields.array(fields.text({ label: 'Feature' }), { label: 'Features' }),
+        image: fields.image({
+          label: 'Product image',
+          directory: 'public/images/products',
+          publicPath: '/images/products/',
+        }),
       },
     }),
 
@@ -67,10 +95,15 @@ export default config({
         types: fields.array(fields.text({ label: 'Type' }), { label: 'Fixture Types' }),
         areas: fields.array(fields.text({ label: 'Area' }), { label: 'Project Areas' }),
         year: fields.number({ label: 'Year' }),
-        bg: fields.text({ label: 'Background Gradient' }),
-        bgLarge: fields.text({ label: 'Background Gradient (Large)' }),
+        bg: fields.text({ label: 'Background gradient (fallback)' }),
+        bgLarge: fields.text({ label: 'Background gradient large (fallback)' }),
         desc: fields.text({ label: 'Description', multiline: true }),
         highlights: fields.array(fields.text({ label: 'Highlight' }), { label: 'Highlights' }),
+        image: fields.image({
+          label: 'Project image',
+          directory: 'public/images/projects',
+          publicPath: '/images/projects/',
+        }),
       },
     }),
 
@@ -92,7 +125,12 @@ export default config({
         }),
         date: fields.text({ label: 'Date (e.g. March 2026)' }),
         excerpt: fields.text({ label: 'Excerpt', multiline: true }),
-        bg: fields.text({ label: 'Background Gradient' }),
+        bg: fields.text({ label: 'Background gradient (fallback)' }),
+        image: fields.image({
+          label: 'Article image',
+          directory: 'public/images/articles',
+          publicPath: '/images/articles/',
+        }),
       },
     }),
 

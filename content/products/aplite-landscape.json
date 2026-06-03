@@ -1,1 +1,28 @@
-{"name":"APLITE Tree-Strapped","series":"APLITE","tag":"LED Landscape Light","category":"outdoor","type":["Fixed/Adjustable"],"installation":["Surface Mounted"],"power":"3W – 12W","cri":"CRI 80+","cct":"2700K / 3000K","ip":"IP65","shape":"wall","bg":"from-green-200 to-lime-200","isNew":false,"desc":"Tree-mounted landscape accent light with adjustable strap mount, ideal for resort gardens and pathways.","features":["IP65 rated","Adjustable strap","Spike / strap mount","Warm white","Salt-spray tested"]}
+{
+  "name": "APLITE Tree-Strapped",
+  "series": "APLITE",
+  "tag": "LED Landscape Light",
+  "category": "outdoor",
+  "type": [
+    "Fixed/Adjustable"
+  ],
+  "installation": [
+    "Surface Mounted"
+  ],
+  "power": "3W \u2013 12W",
+  "cri": "CRI 80+",
+  "cct": "2700K / 3000K",
+  "ip": "IP65",
+  "shape": "wall",
+  "bg": "from-green-200 to-lime-200",
+  "isNew": false,
+  "desc": "Tree-mounted landscape accent light with adjustable strap mount, ideal for resort gardens and pathways.",
+  "features": [
+    "IP65 rated",
+    "Adjustable strap",
+    "Spike / strap mount",
+    "Warm white",
+    "Salt-spray tested"
+  ],
+  "image": null
+}

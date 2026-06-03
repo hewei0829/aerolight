@@ -1,1 +1,28 @@
-{"name":"St. Regis Macao","location":"Macau, China","country":"China","brand":"Marriott","types":["LED Ceiling Light","LED Track Light","LED Linear Light"],"areas":["Lobby","Guest room","Restaurant","Meeting Room"],"year":2022,"bg":"from-[#3a2a1a] to-[#6e4e2e]","bgLarge":"from-[#2a1a0d] via-[#3a2a1a] to-[#6e4e2e]","desc":"Opulent five-star hotel in the Cotai Strip featuring Aero lighting across all public spaces and 400 guest rooms and suites.","highlights":["Custom gold-trim fixture series","Lobby 9m ceiling solution","DALI integrated control","Ballroom colour tuning"]}
+{
+  "name": "St. Regis Macao",
+  "location": "Macau, China",
+  "country": "China",
+  "brand": "Marriott",
+  "types": [
+    "LED Ceiling Light",
+    "LED Track Light",
+    "LED Linear Light"
+  ],
+  "areas": [
+    "Lobby",
+    "Guest room",
+    "Restaurant",
+    "Meeting Room"
+  ],
+  "year": 2022,
+  "bg": "from-[#3a2a1a] to-[#6e4e2e]",
+  "bgLarge": "from-[#2a1a0d] via-[#3a2a1a] to-[#6e4e2e]",
+  "desc": "Opulent five-star hotel in the Cotai Strip featuring Aero lighting across all public spaces and 400 guest rooms and suites.",
+  "highlights": [
+    "Custom gold-trim fixture series",
+    "Lobby 9m ceiling solution",
+    "DALI integrated control",
+    "Ballroom colour tuning"
+  ],
+  "image": null
+}

@@ -2,16 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { products as allProducts } from "@/lib/data";
-
-const products = allProducts.slice(0, 4).map((p) => ({
-  slug: p.slug,
-  tag: p.tag,
-  name: p.name,
-  spec: `${p.power}  ·  ${p.cri}`,
-  bg: p.bg,
-  shape: p.shape,
-}));
+import { getProducts } from "@/lib/reader";
 
 function ProductSVG({ shape }: { shape: string }) {
   if (shape === "track")
@@ -47,7 +38,9 @@ function ProductSVG({ shape }: { shape: string }) {
   );
 }
 
-export default function ProductsSection() {
+export default async function ProductsSection() {
+  const allProducts = await getProducts()
+  const products = allProducts.slice(0, 4)
   return (
     <section className="py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-10">
@@ -63,8 +56,12 @@ export default function ProductsSection() {
             <Link key={p.name} href={`/products/${p.slug}`} className="block group">
               <Card className="border border-neutral-200 rounded-none shadow-none group-hover:shadow-lg group-hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {/* Image area */}
-                <div className={`h-52 bg-gradient-to-br ${p.bg} flex items-center justify-center`}>
-                  <ProductSVG shape={p.shape} />
+                <div className={`h-52 bg-gradient-to-br ${p.bg} flex items-center justify-center overflow-hidden`}>
+                  {p.image ? (
+                    <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <ProductSVG shape={p.shape} />
+                  )}
                 </div>
 
                 <CardContent className="p-5">
@@ -72,7 +69,7 @@ export default function ProductsSection() {
                     {p.tag}
                   </Badge>
                   <h3 className="text-[15px] font-semibold mb-1">{p.name}</h3>
-                  <p className="text-xs text-neutral-500 mb-4">{p.spec}</p>
+                  <p className="text-xs text-neutral-500 mb-4">{p.power} · {p.cri}</p>
                   <span className="text-[11px] font-bold tracking-wider uppercase flex items-center gap-1.5 group-hover:gap-3 transition-all">
                     View Details <ArrowRight size={13} />
                   </span>

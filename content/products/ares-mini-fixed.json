@@ -1,1 +1,28 @@
-{"name":"ARES Mini Fixed","series":"ARES","tag":"LED Ceiling Light","category":"indoor","type":["Fixed/Adjustable"],"installation":["Recessed"],"power":"1.2W – 6W","cri":"CRI 90+","cct":"2700K / 3000K / 4000K","ip":"IP20","shape":"circle","bg":"from-gray-200 to-gray-300","isNew":false,"desc":"Ultra-compact recessed ceiling light for accent and ambient lighting in premium hotel corridors and suites.","features":["Compact Ø40mm","CREE LED","Anti-glare reflector","Multiple beam angles","Paintable trim ring"]}
+{
+  "name": "ARES Mini Fixed",
+  "series": "ARES",
+  "tag": "LED Ceiling Light",
+  "category": "indoor",
+  "type": [
+    "Fixed/Adjustable"
+  ],
+  "installation": [
+    "Recessed"
+  ],
+  "power": "1.2W \u2013 6W",
+  "cri": "CRI 90+",
+  "cct": "2700K / 3000K / 4000K",
+  "ip": "IP20",
+  "shape": "circle",
+  "bg": "from-gray-200 to-gray-300",
+  "isNew": false,
+  "desc": "Ultra-compact recessed ceiling light for accent and ambient lighting in premium hotel corridors and suites.",
+  "features": [
+    "Compact \u00d840mm",
+    "CREE LED",
+    "Anti-glare reflector",
+    "Multiple beam angles",
+    "Paintable trim ring"
+  ],
+  "image": null
+}

@@ -1,1 +1,28 @@
-{"name":"ALF Flowz","series":"ALF","tag":"LED Strip Light","category":"outdoor","type":["RGB/Tunable White"],"installation":["Surface Mounted"],"power":"8W/m","cri":"CRI 90+","cct":"2700K","ip":"IP67","shape":"strip","bg":"from-teal-200 to-emerald-200","isNew":false,"desc":"IP67 flexible LED strip with side-bend capability for curved architectural and landscape applications.","features":["IP67 waterproof","Side-bend design","Silicone extrusion","300° light output","UV resistant"]}
+{
+  "name": "ALF Flowz",
+  "series": "ALF",
+  "tag": "LED Strip Light",
+  "category": "outdoor",
+  "type": [
+    "RGB/Tunable White"
+  ],
+  "installation": [
+    "Surface Mounted"
+  ],
+  "power": "8W/m",
+  "cri": "CRI 90+",
+  "cct": "2700K",
+  "ip": "IP67",
+  "shape": "strip",
+  "bg": "from-teal-200 to-emerald-200",
+  "isNew": false,
+  "desc": "IP67 flexible LED strip with side-bend capability for curved architectural and landscape applications.",
+  "features": [
+    "IP67 waterproof",
+    "Side-bend design",
+    "Silicone extrusion",
+    "300\u00b0 light output",
+    "UV resistant"
+  ],
+  "image": null
+}

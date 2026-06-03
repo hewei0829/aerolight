@@ -1,1 +1,28 @@
-{"name":"W Maldives Resort & Spa","location":"Maldives","country":"Overseas","brand":"Marriott","types":["LED Ceiling Light","LED Strip Light","LED Landscape Light"],"areas":["Guest room","Pool","Outdoor landscape","Restaurant"],"year":2023,"bg":"from-[#1a3a4a] to-[#2e6e8e]","bgLarge":"from-[#0d2a3a] via-[#1a3a4a] to-[#2e6e8e]","desc":"Iconic overwater resort in North Malé Atoll. Full lighting upgrade across all villas, public areas, and oceanfront facilities.","highlights":["IP67 outdoor fixtures throughout","Salt-spray Level 9 tested","Overwater villa ambient system","APLITE landscape series"]}
+{
+  "name": "W Maldives Resort & Spa",
+  "location": "Maldives",
+  "country": "Overseas",
+  "brand": "Marriott",
+  "types": [
+    "LED Ceiling Light",
+    "LED Strip Light",
+    "LED Landscape Light"
+  ],
+  "areas": [
+    "Guest room",
+    "Pool",
+    "Outdoor landscape",
+    "Restaurant"
+  ],
+  "year": 2023,
+  "bg": "from-[#1a3a4a] to-[#2e6e8e]",
+  "bgLarge": "from-[#0d2a3a] via-[#1a3a4a] to-[#2e6e8e]",
+  "desc": "Iconic overwater resort in North Mal\u00e9 Atoll. Full lighting upgrade across all villas, public areas, and oceanfront facilities.",
+  "highlights": [
+    "IP67 outdoor fixtures throughout",
+    "Salt-spray Level 9 tested",
+    "Overwater villa ambient system",
+    "APLITE landscape series"
+  ],
+  "image": null
+}

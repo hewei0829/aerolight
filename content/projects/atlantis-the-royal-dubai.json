@@ -1,1 +1,28 @@
-{"name":"Atlantis The Royal","location":"Dubai, UAE","country":"Overseas","brand":"Other Luxury","types":["LED Ceiling Light","LED Track Light","LED Strip Light"],"areas":["Lobby","Guest room","Restaurant","Pool"],"year":2023,"bg":"from-[#1a2a3a] to-[#2c4a6e]","bgLarge":"from-[#0d1e2e] via-[#1a2a3a] to-[#2c4a6e]","desc":"A landmark ultra-luxury resort on its own island, featuring dramatic lighting throughout 795 rooms, 90 suites, and world-class amenities.","highlights":["ALA Track series throughout suites","Custom colour temperature per zone","Smart DALI control system","IP65 pool deck fixtures"]}
+{
+  "name": "Atlantis The Royal",
+  "location": "Dubai, UAE",
+  "country": "Overseas",
+  "brand": "Other Luxury",
+  "types": [
+    "LED Ceiling Light",
+    "LED Track Light",
+    "LED Strip Light"
+  ],
+  "areas": [
+    "Lobby",
+    "Guest room",
+    "Restaurant",
+    "Pool"
+  ],
+  "year": 2023,
+  "bg": "from-[#1a2a3a] to-[#2c4a6e]",
+  "bgLarge": "from-[#0d1e2e] via-[#1a2a3a] to-[#2c4a6e]",
+  "desc": "A landmark ultra-luxury resort on its own island, featuring dramatic lighting throughout 795 rooms, 90 suites, and world-class amenities.",
+  "highlights": [
+    "ALA Track series throughout suites",
+    "Custom colour temperature per zone",
+    "Smart DALI control system",
+    "IP65 pool deck fixtures"
+  ],
+  "image": null
+}

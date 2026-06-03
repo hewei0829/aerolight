@@ -1,16 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { projects as allProjects } from "@/lib/data";
+import { getProjects } from "@/lib/reader";
 
-const projects = allProjects.slice(0, 5).map((p, i) => ({
-  slug: p.slug,
-  location: p.location,
-  name: p.name,
-  bg: p.bg,
-  span: i === 0,
-}));
-
-export default function ProjectsGallery() {
+export default async function ProjectsGallery() {
+  const allProjects = await getProjects()
+  const projects = allProjects.slice(0, 5).map((p, i) => ({ ...p, span: i === 0 }))
   return (
     <section className="py-20 bg-neutral-50">
       <div className="max-w-[1400px] mx-auto px-10">
@@ -31,7 +25,11 @@ export default function ProjectsGallery() {
                 p.span ? "md:row-span-2 min-h-[720px]" : "min-h-[356px]"
               }`}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${p.bg} group-hover:scale-105 transition-transform duration-500`} />
+              {p.image ? (
+                <img src={p.image} alt={p.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              ) : (
+                <div className={`absolute inset-0 bg-gradient-to-br ${p.bg} group-hover:scale-105 transition-transform duration-500`} />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/65 to-transparent">
                 <p className="text-[11px] tracking-[2px] uppercase text-gold mb-1">{p.location}</p>

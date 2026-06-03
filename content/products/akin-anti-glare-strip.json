@@ -1,1 +1,28 @@
-{"name":"AKIN Anti-Glare Strip","series":"AKIN","tag":"LED Strip Light","category":"indoor","type":["Dot-free"],"installation":["Surface Mounted"],"power":"12W/m","cri":"CRI 90+","cct":"2700K / 3000K / 4000K","ip":"IP20","shape":"strip","bg":"from-zinc-200 to-zinc-300","isNew":false,"desc":"High-performance anti-glare LED strip with UGR<16 and dot-free technology for luxury linear applications.","features":["UGR <16","Dot-free technology","Epistar LED","CRI 90+","Bendable PCB"]}
+{
+  "name": "AKIN Anti-Glare Strip",
+  "series": "AKIN",
+  "tag": "LED Strip Light",
+  "category": "indoor",
+  "type": [
+    "Dot-free"
+  ],
+  "installation": [
+    "Surface Mounted"
+  ],
+  "power": "12W/m",
+  "cri": "CRI 90+",
+  "cct": "2700K / 3000K / 4000K",
+  "ip": "IP20",
+  "shape": "strip",
+  "bg": "from-zinc-200 to-zinc-300",
+  "isNew": false,
+  "desc": "High-performance anti-glare LED strip with UGR<16 and dot-free technology for luxury linear applications.",
+  "features": [
+    "UGR <16",
+    "Dot-free technology",
+    "Epistar LED",
+    "CRI 90+",
+    "Bendable PCB"
+  ],
+  "image": null
+}

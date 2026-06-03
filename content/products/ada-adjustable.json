@@ -1,1 +1,28 @@
-{"name":"ADA Adjustable","series":"ADA","tag":"LED Ceiling Light","category":"indoor","type":["Fixed/Adjustable"],"installation":["Recessed"],"power":"7W – 20W","cri":"CRI 90+","cct":"2700K / 3000K","ip":"IP20","shape":"cone","bg":"from-amber-100 to-amber-200","isNew":true,"desc":"360° rotatable adjustable downlight with smooth aiming for art illumination in hotel lobbies and galleries.","features":["360° rotation","90° tilt","CREE LED","Glare-shield included","DALI dimming"]}
+{
+  "name": "ADA Adjustable",
+  "series": "ADA",
+  "tag": "LED Ceiling Light",
+  "category": "indoor",
+  "type": [
+    "Fixed/Adjustable"
+  ],
+  "installation": [
+    "Recessed"
+  ],
+  "power": "7W \u2013 20W",
+  "cri": "CRI 90+",
+  "cct": "2700K / 3000K",
+  "ip": "IP20",
+  "shape": "cone",
+  "bg": "from-amber-100 to-amber-200",
+  "isNew": true,
+  "desc": "360\u00b0 rotatable adjustable downlight with smooth aiming for art illumination in hotel lobbies and galleries.",
+  "features": [
+    "360\u00b0 rotation",
+    "90\u00b0 tilt",
+    "CREE LED",
+    "Glare-shield included",
+    "DALI dimming"
+  ],
+  "image": null
+}
