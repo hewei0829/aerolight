@@ -1,12 +1,10 @@
 import { config, collection, fields } from '@keystatic/core'
 
 export default config({
-  storage: process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_CLIENT_ID
-    ? {
-        kind: 'github' as const,
-        repo: { owner: 'hewei0829', name: 'aerolight' },
-      }
-    : { kind: 'local' as const },
+  storage: {
+    kind: 'github' as const,
+    repo: { owner: 'hewei0829', name: 'aerolight' },
+  },
 
   ui: {
     brand: { name: 'Aerolight 管理后台' },
