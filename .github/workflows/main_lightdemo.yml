@@ -24,6 +24,8 @@ jobs:
           node-version: '22.x'
 
       - name: npm install, build and prune
+        env:
+          NEXT_PUBLIC_KEYSTATIC_GITHUB_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_KEYSTATIC_GITHUB_CLIENT_ID }}
         run: |
           npm ci
           npm run build
