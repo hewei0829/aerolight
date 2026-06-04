@@ -54,9 +54,6 @@ export default function Header() {
           <Link href="/products" className="text-neutral-700 hover:text-black transition-colors">
             <Search size={18} />
           </Link>
-          <Button variant="outline" className="text-xs tracking-widest uppercase rounded-none border-black hover:bg-black hover:text-white transition-colors px-5">
-            Login
-          </Button>
         </div>
 
         {/* Mobile hamburger */}
@@ -71,9 +68,6 @@ export default function Header() {
                   {label}
                 </Link>
               ))}
-              <Button variant="outline" className="mt-2 text-xs tracking-widest uppercase rounded-none border-black hover:bg-black hover:text-white transition-colors">
-                Login
-              </Button>
             </nav>
           </SheetContent>
         </Sheet>

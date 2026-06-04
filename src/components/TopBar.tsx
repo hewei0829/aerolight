@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, User, Globe } from "lucide-react";
+import { Search, Globe } from "lucide-react";
 
 export default function TopBar() {
   return (
@@ -11,10 +11,7 @@ export default function TopBar() {
         <Search size={12} />
         Search
       </Link>
-      <Link href="/contact" className="hover:text-white transition-colors flex items-center gap-1.5">
-        <User size={12} />
-        Login
-      </Link>
+
       <button className="border border-neutral-600 px-3 py-0.5 rounded-sm hover:border-neutral-400 hover:text-white transition-colors flex items-center gap-1.5">
         <Globe size={12} />
         EN / 中文
