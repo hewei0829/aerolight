@@ -23,19 +23,11 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: npm install and build
-        run: |
-          npm install
-          npm run build
-
-      - name: Zip artifact for deployment
-        run: zip release.zip .next public content package.json package-lock.json next.config.mjs keystatic.config.ts -r
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: release.zip
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,5 +45,5 @@ jobs:
         with:
           app-name: 'lightdemo'
           slot-name: 'Production'
-          package: release.zip
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0237EC9206B64E01B4B3F6ACEFCC73F5 }}
+          package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_47733937894D4ED9B3FD72805D936A80 }}
