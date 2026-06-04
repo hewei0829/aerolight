@@ -3,7 +3,7 @@ import config from '../../../../../keystatic.config'
 
 const handler = makeRouteHandler({ config })
 
-export async function GET(req: Request, ctx: unknown) {
+export async function GET(req: Request) {
   const url = new URL(req.url)
   const isCallback = url.pathname.includes('/oauth/callback')
 
@@ -15,7 +15,7 @@ export async function GET(req: Request, ctx: unknown) {
     console.log('[keystatic] KEYSTATIC_SECRET:', process.env.KEYSTATIC_SECRET)
   }
 
-  const res = await handler.GET(req, ctx)
+  const res = await handler.GET(req)
 
   if (isCallback) {
     console.log('[keystatic] callback response status:', res.status)
@@ -26,6 +26,6 @@ export async function GET(req: Request, ctx: unknown) {
   return res
 }
 
-export async function POST(req: Request, ctx: unknown) {
-  return handler.POST(req, ctx)
+export async function POST(req: Request) {
+  return handler.POST(req)
 }
