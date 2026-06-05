@@ -19,7 +19,9 @@ function fixAzureRequest(req: Request): Request {
   const forwardedHost = req.headers.get('x-forwarded-host')
   const forwardedProto = req.headers.get('x-forwarded-proto') || 'https'
   if (forwardedHost) {
-    url.host = forwardedHost
+    // Strip any port from the forwarded host — public HTTPS has no port
+    url.hostname = forwardedHost.split(':')[0]
+    url.port = ''
     url.protocol = forwardedProto + ':'
     return new Request(url.toString(), req)
   }
