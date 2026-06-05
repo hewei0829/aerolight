@@ -4,9 +4,6 @@ export default config({
   storage: {
     kind: 'github' as const,
     repo: { owner: 'hewei0829', name: 'aerolight' },
-    clientId: 'Iv23ligBBwMsicYxvSXA',
-    clientSecret: process.env.KEYSTATIC_GITHUB_CLIENT_SECRET!,
-    tokenSecret: process.env.KEYSTATIC_SECRET!,
   },
 
   ui: {
