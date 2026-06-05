@@ -1,24 +1,10 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
-import { Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { downloads } from "@/lib/data";
+import { getDownloads } from "@/lib/reader";
+import DownloadList from "@/components/DownloadList";
 
-const tabs = ["All", "Catalogue", "Portfolio"] as const;
-type Tab = typeof tabs[number];
-
-export default function DownloadPage() {
-  const [tab, setTab] = useState<Tab>("All");
-  const [downloaded, setDownloaded] = useState<Set<string>>(new Set());
-
-  const filtered = downloads.filter((d) => tab === "All" || d.category === tab);
-
-  const handleDownload = (id: string) => {
-    setDownloaded((prev) => new Set(prev).add(id));
-  };
+export default async function DownloadPage() {
+  const downloads = await getDownloads();
 
   return (
     <>
@@ -41,52 +27,7 @@ export default function DownloadPage() {
       </div>
 
       <div className="max-w-[1400px] mx-auto px-10 py-12">
-        {/* Tabs */}
-        <div className="flex gap-0 border-b border-neutral-200 mb-10">
-          {tabs.map((t) => (
-            <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={cn(
-                "px-6 py-3 text-sm font-medium tracking-wide uppercase transition-colors border-b-2 -mb-px",
-                tab === t ? "border-gold text-black" : "border-transparent text-neutral-500 hover:text-black"
-              )}
-            >
-              {t}
-            </button>
-          ))}
-        </div>
-
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {filtered.map((d) => (
-            <div key={d.id} className="border border-neutral-200 overflow-hidden hover:shadow-md transition-shadow group">
-              {/* Thumbnail */}
-              <div className={`h-44 bg-gradient-to-br ${d.bg} relative flex items-center justify-center`}>
-                <FileText size={40} className="opacity-20" />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
-              </div>
-              {/* Info */}
-              <div className="p-5">
-                <span className="text-[10px] tracking-[2px] uppercase text-gold font-semibold">{d.category}</span>
-                <h3 className="text-sm font-semibold mt-1 mb-1 leading-snug">{d.title}</h3>
-                <p className="text-xs text-neutral-400 mb-4">{d.year} · {d.size} · {d.downloads.toLocaleString()} downloads</p>
-                <Button
-                  onClick={() => handleDownload(d.id)}
-                  className={cn(
-                    "w-full rounded-none text-xs tracking-wider uppercase gap-2 py-5",
-                    downloaded.has(d.id)
-                      ? "bg-neutral-100 text-neutral-500 hover:bg-neutral-200 border border-neutral-200"
-                      : "bg-black hover:bg-neutral-800 text-white"
-                  )}
-                >
-                  <Download size={13} />
-                  {downloaded.has(d.id) ? "Downloaded" : "Download"}
-                </Button>
-              </div>
-            </div>
-          ))}
-        </div>
+        <DownloadList items={downloads} />
 
         {/* Info blurb */}
         <div className="mt-16 bg-neutral-50 border border-neutral-200 p-8 grid grid-cols-1 md:grid-cols-3 gap-8">

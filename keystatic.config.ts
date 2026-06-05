@@ -151,6 +151,11 @@ export default config({
         size: fields.text({ label: '文件大小（如：28 MB）' }),
         downloads: fields.number({ label: '下载次数', defaultValue: 0 }),
         bg: fields.text({ label: '背景渐变色' }),
+        file: fields.file({
+          label: '文件（PDF / ZIP）',
+          directory: 'public/downloads',
+          publicPath: '/downloads/',
+        }),
       },
     }),
   },
